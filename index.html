@@ -1,20 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source
+          srcset="images/bg-mobile-light.jpg"
+          media="(max-width: 375px)"
+        />
+        <source srcset="images/bg-desktop-light.jpg" />
+        <img
+          src="images/bg-desktop-light.jpg"
+          alt="Background Image Mountains"
+        />
+      </picture>
+    </header>
+    <div class="container">
+      <div class="title">
+        <h1>TODO</h1>
+        <img src="/images/icon-moon.svg" alt="Change Theme Image" />
+      </div>
+      <!-- End of Title-->
 
-</head>
-<body>
+      <div class="form">
+        <input
+          type="text"
+          name="todo-input"
+          id="todo-input"
+          placeholder="Create a new todo..."
+        />
+      </div>
+      <!-- End of Input Form-->
+      <!-- Todos Filter -->
+      <div class="todos-filter">
+        <span class="selected">All</span>
+        <span>Active</span>
+        <span>Completed</span>
+      </div>
+      <!--End of Todos Filter-->
+      <div class="todos-list">
+        <ul class="list">
+          <li class="list-item completed">
+            <span class="todo-checkbox"></span>
+            <p class="todo">Complete online JavaScript course</p>
+            <span class="todo-clear-icon">
+              <img src="/images/icon-cross.svg" alt="Cross Icon" />
+            </span>
+          </li>
+          <li class="list-item">
+            <span class="todo-checkbox"></span>
+            <p class="todo">Jog around the park 3𝗑</p>
+            <span class="todo-clear-icon">
+              <img src="/images/icon-cross.svg" alt="Cross Icon" />
+            </span>
+          </li>
+          <li class="list-item completed">
+            <span class="todo-checkbox"></span>
+            <p class="todo">10 minutes meditation</p>
+            <span class="todo-clear-icon">
+              <img src="/images/icon-cross.svg" alt="Cross Icon" />
+            </span>
+          </li>
+          <li class="list-item">
+            <span class="todo-checkbox"></span>
+            <p class="todo">Read for 1 hour</p>
+            <span class="todo-clear-icon">
+              <img src="/images/icon-cross.svg" alt="Cross Icon" />
+            </span>
+          </li>
+          <li class="todos-status-item">
+            <span>5 items left</span>
+            <span>Clear Completed</span>
+          </li>
+        </ul>
+      </div>
+      <!-- End of Todos List-->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://shayan-faghihi.ir">Shayan Faghihi</a>.
-  </div>
-</body>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://shayan-faghihi.ir">Shayan Faghihi</a>.
+      </div>
+    </div>
+    <!-- End of Container -->
+  </body>
 </html>

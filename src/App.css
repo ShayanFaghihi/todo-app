@@ -15,7 +15,7 @@
   --clr-main-grad-purple: hsl(280, 87%, 65%);
 
   /* Light Theme Colors */
-  --clr-ltheme-grey-very-light: hsl(0, 0%, 98%);
+  --clr-ltheme-grey-very-light: hsl(0, 0%, 95%);
   --clr-ltheme-greyBlue-very-light: hsl(236, 33%, 92%);
   --clr-ltheme-greyBlue-light: hsl(233, 11%, 84%);
   --clr-ltheme-greyBlue-dark: hsl(236, 9%, 61%);
@@ -55,6 +55,6 @@ body {
 .container {
   width: min(90%, 540px);
   margin-inline: auto;
-  margin-top: -10vmin;
+  margin-top: -14vmin;
   position: relative;
 }

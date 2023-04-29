@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://shayan-todo.netlify.app/)
+- [Live Site URL](https://your-live-site-url.com)
 
 ## My process
 

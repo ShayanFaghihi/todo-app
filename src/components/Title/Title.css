@@ -1,0 +1,82 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .title h1 {
+    font-family: inherit;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  
+  .title img {
+    cursor: pointer;
+  }
+
+  .toggle {
+    background-color: transparent;
+    width: 60px;
+    height: 29px;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--clr-ltheme-greyBlue-light);
+    border-radius: 34px;
+    transition: background-color 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5px;
+  }
+
+  .switch span {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .switch span img {
+    width: 20px;
+  }
+
+  .switch span img:focus {
+    outline: none;
+  }
+  
+  .switch:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+  }
+  
+  .toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .toggle input[type="checkbox"]:checked + .switch {
+    background-color: var(--clr-main-blue);
+  }
+  
+  .toggle input[type="checkbox"]:checked + .switch:before {
+    transform: translate(26px, 0);
+  }
+  

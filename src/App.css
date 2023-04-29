@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --clr-main-blue: hsl(220, 98%, 61%);
+  --clr-main-grad-blue: hsl(192, 100%, 67%);
+  --clr-main-grad-purple: hsl(280, 87%, 65%);
+
+  /* Light Theme Colors */
+  --clr-ltheme-grey-very-light: hsl(0, 0%, 98%);
+  --clr-ltheme-greyBlue-very-light: hsl(236, 33%, 92%);
+  --clr-ltheme-greyBlue-light: hsl(233, 11%, 84%);
+  --clr-ltheme-greyBlue-dark: hsl(236, 9%, 61%);
+  --clr-ltheme-greyBlue-very-dark: hsl(235, 19%, 35%);
+
+  --clr-dtheme-blue-very-dark: hsl(235, 21%, 11%);
+  --clr-dtheme-blue-very-dark-desaturated: hsl(235, 24%, 19%);
+  --clr-dtheme-greyBlue-light: hsl(234, 39%, 85%);
+  --clr-dtheme-greyBlue-light-hover: hsl(236, 33%, 92%);
+  --clr-dtheme-greyBlue-dark: hsl(234, 11%, 52%);
+  --clr-dtheme-greyBlue-very-dark: hsl(233, 14%, 35%);
+  --clr-dtheme-greyBlue-extra-dark: hsl(237, 14%, 26%);
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--clr-ltheme-grey-very-light);
+  min-height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-ltheme-grey-very-light);
+}
+
+#dark.wrapper {
+  background-color: var(--clr-dtheme-blue-very-dark);
+}
+
+.container {
+  width: min(90%, 540px);
+  margin-inline: auto;
+  margin-top: -10vmin;
+  position: relative;
+}

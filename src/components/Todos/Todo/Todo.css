@@ -1,0 +1,89 @@
+.todos-list .list .list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 10px;
+  cursor: pointer;
+}
+
+.todos-list .list-item + .list-item {
+  border-top: 1px solid var(--clr-ltheme-grey-very-light);
+}
+
+.todos-list .list .list-item .todo-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid var(--clr-ltheme-greyBlue-very-light);
+  background-color: var(--clr-ltheme-grey-very-light);
+  position: relative;
+}
+
+.todos-list .list .list-item .todo {
+  font-size: 0.67rem;
+  margin-right: auto;
+  color: var(--clr-ltheme-greyBlue-very-dark);
+}
+
+.todos-list .list .list-item .todo-clear-icon img {
+  /* Remove Icon */
+  width: 0.7rem;
+  opacity: 0.7;
+  fill: var(--clr-ltheme-greyBlue-very-dark);
+  cursor: pointer;
+}
+
+.todos-list .list .list-item.completed .todo {
+  text-decoration: line-through;
+  text-decoration-color: var(--clr-ltheme-greyBlue-light);
+  color: var(--clr-ltheme-greyBlue-light);
+}
+
+.list-item.completed .todo-checkbox::before {
+  /* Check Icon */
+  content: url("/images/icon-check.svg");
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--clr-main-grad-blue),
+    var(--clr-main-grad-purple)
+  );
+}
+
+@media (min-width: 768px) {
+  .todos-list .list .list-item .todo-clear-icon img {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .todos-list .list .list-item:hover .todo-clear-icon img {
+    opacity: 1;
+  }
+}
+
+/* Dark */
+#dark .todos-list .list-item + .list-item {
+  border-top-color: var(--clr-dtheme-greyBlue-light);
+}
+
+#dark .todos-list .list .list-item .todo-checkbox {
+  background-color: var(--clr-dtheme-blue-very-dark-desaturated);
+}
+
+#dark .todos-list .list .list-item .todo {
+  color: var(--clr-dtheme-greyBlue-light);
+}
+
+#dark .todos-list .list .list-item.completed .todo {
+  text-decoration-color: var(--clr-dtheme-greyBlue-very-dark);
+  color: var(--clr-dtheme-greyBlue-very-dark);
+}

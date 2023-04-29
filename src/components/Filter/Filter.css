@@ -1,0 +1,40 @@
+.todos-filter {
+  background-color: #fff;
+  color: var(--clr-ltheme-greyBlue-light);
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  border-radius: 7px;
+  font-size: 0.77rem;
+  font-weight: 400;
+}
+
+.todos-filter span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.todos-filter span:hover {
+  color: var(--clr-ltheme-greyBlue-very-dark);
+}
+
+.todos-filter span.selected {
+  color: var(--clr-main-blue);
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+/* Dark */
+
+#dark .todos-filter {
+  background-color: var(--clr-dtheme-blue-very-dark-desaturated);
+  color: var(--clr-dtheme-greyBlue-very-dark);
+}
+
+#dark .todos-filter span:hover {
+  color: var(--clr-dtheme-greyBlue-light-hover);
+}

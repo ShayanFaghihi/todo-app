@@ -1,0 +1,54 @@
+.todos-list .list .todos-status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10px;
+  border-top: 1px solid var(--clr-ltheme-grey-very-light);
+  font-size: 0.67rem;
+  color: var(--clr-ltheme-greyBlue-dark);
+}
+
+.todos-list .list .todos-status-item span:nth-of-type(2) {
+  cursor: pointer;
+  color: var(--clr-main-blue);
+  transition: color 0.3s;
+}
+.todos-list .list .todos-status-item span:nth-of-type(2):hover {
+  color: var(--clr-main-grad-purple);
+}
+
+
+/* Dark */
+#dark .todos-list .list .todos-status-item {
+  color: var(--clr-dtheme-greyBlue-light);
+  border-top-color: var(--clr-dtheme-greyBlue-very-dark);
+}
+
+
+/* Tooltip */
+.todos-status-clearAll {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.todos-status-clearAll .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* When Tooltip is Shown */
+.tooltip.show {
+  visibility: visible;
+}
+
+.todos-status-clearAll.disabled {
+  cursor: not-allowed;
+}

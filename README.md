@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./UI/design/desktop-design-light.jpg)
+![](./UI/design/desktop-preview.jpg)
 
 ### Links
 
